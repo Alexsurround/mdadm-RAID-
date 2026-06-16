@@ -114,6 +114,8 @@ ls -la /mnt/raid_data
 # Если диск числится как failed/нет в массиве — убрать старую запись
 sudo mdadm /dev/md54 --remove /dev/sdb
 
+# может быть read
+
 # Добавить диск для полной ресинхронизации
 sudo mdadm /dev/md54 --add /dev/sdb
 
